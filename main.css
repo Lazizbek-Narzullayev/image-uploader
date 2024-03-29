@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#e7baff,#c2b6d9);
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+#drop-area{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+.img-view{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background-color: #f7f8ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-view img{
+    width: 150px;
+    margin-top: 25px;
+}
+.img-view p{
+    font-size: 24px;
+}
+.img-view span{
+    display: block;
+    font-size: 20px;
+    color: #777;
+    margin-top: 15px;
+}
+.select-image{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 22px;
+    border: 2px solid blue;
+    background-color: blue;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.select-image:hover{
+    background-color: #fff;
+    color: blue;
+}
+@media(max-width: 560px){
+    #drop-area{
+        width: 400px;
+        height: 270px;
+    }
+    .img-view img{
+        width: 120px;
+        margin-top: 20px;
+    }
+    .img-view p{
+        font-size: 20px;
+    }
+    .img-view span{
+        font-size: 18px;
+    }
+}
+@media(max-width:460px){
+    #drop-area{
+        width: 300px;
+        height: 200px;
+    }
+    .img-view img{
+        width: 80px;
+        margin-top: 17px;
+    }
+    .img-view p{
+        font-size: 18px;
+    }
+    .img-view span{
+        font-size: 15px;
+    }
+    .select-image{
+        width: 200px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
+@media(max-width:460px){
+    #drop-area{
+        width: 300px;
+        height: 200px;
+    }
+    .img-view img{
+        width: 80px;
+        margin-top: 17px;
+    }
+    .img-view p{
+        font-size: 18px;
+    }
+    .img-view span{
+        font-size: 15px;
+    }
+    .select-image{
+        width: 200px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
+@media(max-width:360px){
+    #drop-area{
+        width: 200px;
+        height: 130px;
+    }
+    .img-view img{
+        width: 50px;
+        margin-top: 10px;
+    }
+    .img-view p{
+        font-size: 12px;
+    }
+    .img-view span{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .select-image{
+        width: 130px;
+        height: 28px;
+        font-size: 11px;
+    }
+}
